@@ -95,6 +95,7 @@ nav ul li a.active {
 .banner img {
     width: 100%; /* Adjust as needed */
     border-radius: 5px;
+    padding-top: 20px;
 }
 
 /* Benefits Section */
@@ -175,7 +176,7 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .control-images {
@@ -208,19 +209,19 @@ footer {
     border-radius: 5px;
     object-fit: cover;
 }
-
+/* 
 .content__test{
     background: rgb(225, 225, 225);
     border-left: 3px solid #4d00ff;
 }
-/* сделай по красоте еж же */
+
 .content__test li{
     text-decoration: none;
     padding: 5px 0px;
 }
 .content__test ul{
     text-decoration: none;
-}
+} */
 
 .control-system-v2 {
     max-width: 1200px;
@@ -331,8 +332,16 @@ footer {
         flex-direction: column;
         height: auto;
     }
+
+    .logo img{
+        padding-bottom: 10px;
+    }
     .header{
         margin-bottom: 50px;
+    }
+
+    .banner img{
+        padding-top: 100px;
     }
 
     /* .main{
@@ -358,6 +367,7 @@ footer {
     }
 
     .footer-section {
+        border: 2px solid black;
         margin: 20px 0;
         text-align: center;
     }
@@ -378,16 +388,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-    .control-images-v2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "top-left"
-            "top-right"
-            "bottom-left";
-    }
-}
+
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
     .control-images {
@@ -422,6 +423,15 @@ footer {
     
     .contact-info p img{
         width: 60px;
+    }
+
+    .control-images-v2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "top-left"
+            "top-right"
+            "bottom-left";
     }
     
 }
@@ -458,6 +468,9 @@ footer {
         min-width: 100%; /* Make footer sections full-width */
     }
     
+    .banner img{
+        padding-top: 200px;
+    }
 }
 
 

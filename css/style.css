@@ -130,6 +130,7 @@ footer {
     flex: 1;
     margin: 10px;
     min-width: 200px;
+    border-right: 1px solid black;
 }
 
 .footer-section h3 {
@@ -328,28 +329,33 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    .navbar {
+    /* .navbar {
         flex-direction: column;
         height: auto;
-    }
+    } */
 
     .logo img{
         padding-bottom: 10px;
     }
-    .header{
+    /* .header{
         margin-bottom: 50px;
-    }
+    } */
 
-    .banner img{
+    /* .banner img{
         padding-top: 100px;
-    }
+    } */
 
     /* .main{
         padding-top: 100px;
     } */
-    nav ul {
+    /* nav ul {
         flex-direction: column;
         align-items: center;
+    } */
+
+    nav ul{
+        gap: 20px;
+        padding-left: 50px;
     }
 
     nav ul li {
@@ -362,16 +368,28 @@ footer {
     }
 
     .footer-container {
+        
         flex-direction: column;
         align-items: center;
     }
 
     .footer-section {
-        border: 2px solid black;
+        border: 0px;
         margin: 20px 0;
         text-align: center;
     }
 
+    .control-images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .control-images-v2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .map iframe{
         width: 300px;
         height: 300px;
@@ -391,7 +409,19 @@ footer {
 
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
-    .control-images {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner img{
+        padding-top: 200px;
+    }
+    /* .control-images {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas:
@@ -399,6 +429,10 @@ footer {
             "top-right"
             "bottom-right";
         
+    } */
+
+    .control-system{
+        padding-top: 200px;
     }
 
     .control-image.bottom-right{
@@ -407,12 +441,14 @@ footer {
 
     }
 
+    
     .contact-section{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 140px 0;
+        padding-top: 270px ;
+        padding-bottom: 100px ;
     }
 
     .map iframe{
@@ -425,14 +461,14 @@ footer {
         width: 60px;
     }
 
-    .control-images-v2 {
+    /* .control-images-v2 {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas:
             "top-left"
             "top-right"
             "bottom-left";
-    }
+    } */
     
 }
 
@@ -469,7 +505,11 @@ footer {
     }
     
     .banner img{
-        padding-top: 200px;
+        padding-top: 300px;
+    }
+
+    .control-system{
+        padding-top: 300px;
     }
 }
 

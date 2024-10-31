@@ -15,7 +15,7 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
-.container{
+.container {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
@@ -35,8 +35,6 @@ header {
     background: white;
     border-bottom: 1px solid gray;
 }
-
-
 
 .logo {
     display: flex;
@@ -80,7 +78,8 @@ nav ul li a.active {
     padding-top: 100px;
 }
 
-.content ul, .content h3 {
+.content ul,
+.content h3 {
     padding: 10px 0;
     line-height: 24px;
 }
@@ -139,7 +138,8 @@ footer {
     margin-bottom: 10px;
 }
 
-.footer-section p, .footer-section ul {
+.footer-section p,
+.footer-section ul {
     font-size: 14px;
     line-height: 1.6;
 }
@@ -153,25 +153,24 @@ footer {
     margin-bottom: 5px;
 }
 
-.footer-section p span:hover{
+.footer-section p span:hover {
     color: red;
-    transition: .5s;
+    transition: 0.5s;
 }
 
-.footer-section a{
+.footer-section a {
     color: #ccc;
     text-decoration: none;
 }
 
-.footer-section a:hover{
+.footer-section a:hover {
     color: red;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 /* Responsive Design */
 
 /* Tablets */
-
 
 .control-system {
     max-width: 1200px;
@@ -201,11 +200,9 @@ footer {
 .control-image.bottom-right {
     padding-top: 120px;
     grid-area: bottom-right;
-
 }
 
 .control-image img {
-   
     height: auto;
     border-radius: 5px;
     object-fit: cover;
@@ -245,12 +242,11 @@ footer {
 }
 
 .control-image-v2.top-right {
-    margin-left: 270px; 
+    margin-left: 270px;
     max-width: 300px;
     grid-area: top-right;
-    
 }
-                        
+
 .control-image-v2.bottom-left {
     grid-area: bottom-left;
 }
@@ -264,15 +260,14 @@ footer {
 
 /* Responsive layout for smaller screens */
 
-
- .control-system-v2 img:hover{
+.control-system-v2 img:hover {
     scale: 1.05;
-    transition: .5s;
+    transition: 0.5s;
 }
 
-.control-system img:hover{
+.control-system img:hover {
     scale: 1.05;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .contact-section {
@@ -298,7 +293,7 @@ footer {
     margin: 0;
 }
 
-.contact-info p img{
+.contact-info p img {
     width: 100px;
     margin-right: 10px;
     padding: 20px 0px;
@@ -309,11 +304,10 @@ footer {
     border-radius: 4px;
 }
 
-.map iframe{
+.map iframe {
     width: 500px;
     height: 400px;
 }
-
 
 /* .content-section{
     padding-top: 120px;
@@ -322,9 +316,7 @@ footer {
     margin: 0 auto;
 } */
 
-
-
-.contact-info img{
+.contact-info img {
     width: 100px;
 }
 
@@ -334,7 +326,7 @@ footer {
         height: auto;
     } */
 
-    .logo img{
+    .logo img {
         padding-bottom: 10px;
     }
     /* .header{
@@ -353,7 +345,7 @@ footer {
         align-items: center;
     } */
 
-    nav ul{
+    nav ul {
         gap: 20px;
         padding-left: 50px;
     }
@@ -368,7 +360,6 @@ footer {
     }
 
     .footer-container {
-        
         flex-direction: column;
         align-items: center;
     }
@@ -379,48 +370,55 @@ footer {
         text-align: center;
     }
 
-    .control-images{
+    .control-images {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .control-images-v2{
+    .control-images-v2 {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .map iframe{
+    .map iframe {
         width: 300px;
         height: 300px;
     }
 
-    .contact-section{
+    .contact-section {
         padding-top: 200px;
     }
-    
-    
-    .contact-info p img{
+
+    .contact-info p img {
         width: 60px;
     }
 }
 
-
-
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
+    /* .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
         height: auto;
     }
     nav ul {
         flex-direction: column;
         align-items: center;
+    } */
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+        height: auto;
     }
 
-    .banner img{
+    /* .banner img{
         padding-top: 200px;
-    }
+    } */
     /* .control-images {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
@@ -431,33 +429,29 @@ footer {
         
     } */
 
-    .control-system{
-        padding-top: 200px;
+    .control-system {
+        padding-top: 100px;
     }
 
-    .control-image.bottom-right{
-        padding: 0px;
 
 
+    .control-images img {
+        max-width: 700px;
     }
-
-    
-    .contact-section{
+    .contact-section {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 270px ;
-        padding-bottom: 100px ;
+        padding: 100px 0;
     }
 
-    .map iframe{
+    .map iframe {
         width: 400px;
         height: 300px;
     }
-    
-    
-    .contact-info p img{
+
+    .contact-info p img {
         width: 60px;
     }
 
@@ -469,7 +463,6 @@ footer {
             "top-right"
             "bottom-left";
     } */
-    
 }
 
 /* Mobile Phones */
@@ -479,12 +472,26 @@ footer {
         margin-bottom: 20px;
     }
 
-    .content h2, .content h3, .content h4,
-    .benefits-section h3, .benefits-section h4 {
+    .control-image.bottom-right{
+        padding: 0;
+        grid-area: 2 / 1 / 2 / 4;
+    }
+
+    .navbar a {
+        font-size: 10px;
+    }
+
+    .content h2,
+    .content h3,
+    .content h4,
+    .benefits-section h3,
+    .benefits-section h4 {
         font-size: 18px; /* Smaller heading size */
     }
 
-    .content p, .benefits-section p, .footer-section p {
+    .content p,
+    .benefits-section p,
+    .footer-section p {
         font-size: 14px;
     }
 
@@ -492,7 +499,8 @@ footer {
         padding-top: 200px;
     } */
 
-    .content-section, .benefits-section {
+    .content-section,
+    .benefits-section {
         padding: 10px;
     }
 
@@ -503,17 +511,14 @@ footer {
     .footer-section {
         min-width: 100%; /* Make footer sections full-width */
     }
-    
-    .banner img{
-        padding-top: 300px;
+    .banner img {
+        padding-top: 100px;
     }
 
-    .control-system{
-        padding-top: 300px;
+    .control-system {
+        padding-top: 100px;
+    }
+    .control-images img {
+        max-width: 300px;
     }
 }
-
-
-
-
-
